@@ -17,3 +17,8 @@
 ####3. logout 모듈
  - 해당 모듈은 로그아웃을 한다.
  - session정보를 초기화 한다. => loginStatus=false, user=""
+
+####4. dbconf 모듈
+ - 해당 모듈은 DB설정 모듈이다.
+ - host, port, user, password, database를 설정후 설정된 객체를 반환한다.
+ - 해당 모듈을 쓰기 위해 mysql모듈을 추가적으로 설치를 할 필요 없다. 해당 모듈 내부에 설치되어 있다.
