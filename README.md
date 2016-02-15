@@ -51,6 +51,7 @@ c.cr("Asdfadcvdsadsfgxcv")
  - utc의 값을 알기위해 가장 앞 자리에 utc%9+1의 값을 삽입하였다.
  - 숫자는 강제로 3자리를 맞추어 주었다.
  - 다음 버전에서는 숫자->문자열 구현 추가예정
+<<<<<<< HEAD
 
 ####6. filter 모듈
 ```
@@ -59,3 +60,5 @@ console.log(f.TextFilter('asdasdasdasdf3$#*&#$JASDJ(#(9'));
 ```
  - SQLInjection 및 XSS(Cross Site Scripting)공격을 예방하기 위해 대응되는 코드로 변환을 한다.
  - <, >, ", ?, ', \, ;, %, -, (, ), =
+=======
+>>>>>>> ee5bd097417ade00e990234f67632247dfabfb4d
