@@ -51,3 +51,21 @@ c.cr("Asdfadcvdsadsfgxcv")
  - utc의 값을 알기위해 가장 앞 자리에 utc%9+1의 값을 삽입하였다.
  - 숫자는 강제로 3자리를 맞추어 주었다.
  - 다음 버전에서는 숫자->문자열 구현 추가예정
+<<<<<<< HEAD
+
+####6. filter 모듈
+```
+var f = require('./filter.js');
+console.log(f.TextFilter('asdasdasdasdf3$#*&#$JASDJ(#(9'));
+```
+ - SQLInjection 및 XSS(Cross Site Scripting)공격을 예방하기 위해 대응되는 코드로 변환을 한다.
+ - <, >, ", ?, ', \, ;, %, -, (, ), =
+
+####7. crawler
+```
+ new weather()
+ .run(param1, param2);
+```
+  - 해당 모듈은 기상철 사이트를 크롤링 하여 날씨 정보를 가져오는 모듈
+  - 현재 인코딩 문제로 인한 문제 발생(데이터 파싱 불가.) 
+  - param은 대,소문자 구분을 할 필요가 없다.

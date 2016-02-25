@@ -60,5 +60,12 @@ console.log(f.TextFilter('asdasdasdasdf3$#*&#$JASDJ(#(9'));
 ```
  - SQLInjection 및 XSS(Cross Site Scripting)공격을 예방하기 위해 대응되는 코드로 변환을 한다.
  - <, >, ", ?, ', \, ;, %, -, (, ), =
-=======
->>>>>>> ee5bd097417ade00e990234f67632247dfabfb4d
+
+####7. crawler
+```
+new weather()
+.run(param1, param2);
+```
+  - 해당 모듈은 기상철 사이트를 크롤링 하여 날씨 정보를 가져오는 모듈
+  - 현재 인코딩 문제로 인한 문제 발생(데이터 파싱 불가.) 
+  - param은 대,소문자 구분을 할 필요가 없다.
