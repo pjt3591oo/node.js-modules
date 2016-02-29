@@ -1,7 +1,5 @@
 var request = require('request');
 var cheerio = require('cheerio');
-var page = require('webpage');
-
 
 function weather(){
 	/* 
@@ -13,7 +11,6 @@ function weather(){
 	this.mapInfo=[['Korea','japan'],['europe','유럽1']]; //인덱스 -> 대륙, [0][0] : Asia, [0][1] : Europe
 
 } 
-
 
 weather.prototype.conCodeRtn= function(country){
 	var map ={
@@ -45,7 +42,7 @@ weather.prototype.makeUrl= function(continent){
 
 weather.prototype.req =function(){
 	console.log(this.url);
-	request(this.url, function(error, response, body) {
+	request("https://www.google.co.kr/gen_204?atyp=i&ct=slh&cad=&ei=x_3PVtO-N4LEmwWQxYqoBg&s=15&v=2&pv=0.43635038705542684&me=82:1456472208725,V,0,0,0,0:277327,H,26,i:321,H,26,o:1511,H,26,i:5728,H,26,o:263,H,26,i:217,H,26,o:21713,H,26,i:2688,H,26,o:42155,U,351923:1,V,0,0,1920,995:0,E,26,136,172,512,560:0,E,41,136,755,512,76:0,E,46,136,854,512,76:0,E,52,136,953,512,76:0,E,54,136,1052,512,58:0,E,64,136,1133,512,76:0,E,70,136,1232,512,76:0,E,75,136,1331,512,76:1,e,B&zx=1456472560650", function(error, response, body) {
 	   	if(error) {
     		console.log("Error: " + error);
    		}
@@ -65,7 +62,6 @@ weather.prototype.req =function(){
 weather.prototype.run = function(country, city){
 	var continent =  this.conCodeRtn(country);
 	this.makeUrl(continent);
-	console.log(this.url);
 	return this.req();
 };
 

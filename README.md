@@ -69,3 +69,17 @@ new weather()
   - 해당 모듈은 기상철 사이트를 크롤링 하여 날씨 정보를 가져오는 모듈
   - 현재 인코딩 문제로 인한 문제 발생(데이터 파싱 불가.) 
   - param은 대,소문자 구분을 할 필요가 없다.
+
+####8. tansCrawler
+```
+var option={
+	fromCountry:'korea - south',
+	toCOuntry:'japan',
+	string:''
+}
+new Transform()
+.run(option);
+```
+  - 해당 모듈은 ms번역기를 이용한 모듈이다.
+  - 현재 가능한 번역국가(south - korea,korea - south, japan, china, africa)
+  - 국가는 추후에 추가할 예정

@@ -1,0 +1,68 @@
+﻿[,…]
+0: [["너 몇살 이니", "how old are you", undefined, undefined, 1], [undefined, undefined, "neo myeochsal ini"]]
+0: ["너 몇살 이니", "how old are you", undefined, undefined, 1]
+0: "너 몇살 이니"
+1: "how old are you"
+2: undefined
+3: undefined
+4: 1
+1: [undefined, undefined, "neo myeochsal ini"]
+0: undefined
+1: undefined
+2: "neo myeochsal ini"
+1: [["구문", ["몇 살이세요?"], [["몇 살이세요?", ["How old are you?"]]], "How old are you?", 10]]
+0: ["구문", ["몇 살이세요?"], [["몇 살이세요?", ["How old are you?"]]], "How old are you?", 10]
+0: "구문"
+1: ["몇 살이세요?"]
+0: "몇 살이세요?"
+2: [["몇 살이세요?", ["How old are you?"]]]
+0: ["몇 살이세요?", ["How old are you?"]]
+0: "몇 살이세요?"
+1: ["How old are you?"]
+0: "How old are you?"
+3: "How old are you?"
+4: 10
+2: "en"
+3: undefined
+4: undefined
+5: [,…]
+0: ["how old are you", 32000, [["너 몇살 이니", 1000, true, false], ["몇 살이세요", 0, true, false]], [[0, 15]],…]
+0: "how old are you"
+1: 32000
+2: [["너 몇살 이니", 1000, true, false], ["몇 살이세요", 0, true, false]]
+0: ["너 몇살 이니", 1000, true, false]
+0: "너 몇살 이니"
+1: 1000
+2: true
+3: false
+1: ["몇 살이세요", 0, true, false]
+0: "몇 살이세요"
+1: 0
+2: true
+3: false
+3: [[0, 15]]
+4: "how old are you"
+5: 0
+6: 0
+6: 0.69754452
+7: undefined
+8: [["en"], undefined, [0.69754452], ["en"]]
+0: ["en"]
+0: "en"
+1: undefined
+2: [0.69754452]
+0: 0.69754452
+3: ["en"]
+0: "en"
+9: undefined
+10: undefined
+11: undefined
+12: undefined
+13: undefined
+14: [["How old are you?", "you", "how", "are", "old"]]
+0: ["How old are you?", "you", "how", "are", "old"]
+0: "How old are you?"
+1: "you"
+2: "how"
+3: "are"
+4: "old"

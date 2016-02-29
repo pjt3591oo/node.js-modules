@@ -1,0 +1,19 @@
+﻿var request = require('request');
+var cheerio = require('cheerio');
+var fs = require('fs');
+
+var url = 'https://translate.google.com/translate_a/single?client=t&sl=en&tl=ko&hl=ko&dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&ie=UTF-8&oe=UTF-8&otf=2&srcrom=0&ssel=0&tsel=0&kc=3&tk=839654.713657&q=how%20old%20are%20you';
+
+request(url, function(err,httpResponse,body){ 
+	if(!err){
+		//var pattern = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
+		//console.log(body.split(" ")[0].replace(pattern, " ").split(' ')[4]);
+		var pattern =  /^"~"$/;
+		//console.log(body);
+		var string = (((body.split('[[[')[1]).split(']')[0]).split('\"')[1]).split('\"')[0];
+		console.log(string);
+		//console.log((((body.split('[[[')[1]).split(']')[0]).split('\"')[1]).split('\"')[0]);
+		//console.log(body.split('[[["')[1]);
+		
+	}
+});
